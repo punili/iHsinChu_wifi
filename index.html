@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>新竹市政府免費無線上網熱點位置清單</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?language=zh-TW&key=AIzaSyCisNx62xYgtTsY4-jaR0jnDepLbt1-sTk&callback=initMap"
+  type="text/javascript" ></script>
+  	<script type="text/javascript" src="wifi.js"></script>
+  	<link rel="shortcut icon" href="pic/shortcut.ico">
+  	<meta property="og:title" content="新竹市政府 Free WIFI"></meta>
+	<meta property="og:description" content="iHsinChu 免費熱點快速搜"></meta>
+	<meta property="og:url" content=""></meta>
+	<meta property="og:image" content="pic/ihsinchu_wifi.jpg"/></meta>
+	<link rel="stylesheet" type="text/css" href="wifi.css">		
+</head>
+<body>
+	
+	<div class="wrap">
+		<div class="header">
+	      <h1 onclick="window.location.reload();">新竹市政府<br/>Free WIFI</h1>
+	      <p>* iHsinChu 免費熱點快速搜 *</p>
+	    </div>
+	    <div class="select"> 
+	        <select name="location" id="selectList" class="selectList font">	        
+	          <option value="all" selected="selected">新竹市全區</option>
+	          <option value="北區">北區</option>
+	          <option value="東區">東區</option>
+	          <option value="香山區">香山區</option>	          
+	        </select>	        
+	        <div id="search" class="search">搜尋</div>	      
+	    </div>
+		<div id="list" class="list"></div>
+		<div id="map" class="map"></div>
+	</div>
+	<footer> Copyright &copy; Puni 2017 <br/> open data 來源：<a href="http://opendata.hccg.gov.tw/dataset/beeb0065-2f96-4119-a15c-a7641c623be7/resource/acc17e6f-11a2-49bd-b923-37107aacdbd3/download/20171201135132790.json" title="iHsinchu 免費無線上網熱點地點資訊" alt="iHsinchu 免費無線上網熱點地點資訊">新竹市政府免費無線上網熱點地點資訊</a></footer>	
+	
+</body>
+</html>

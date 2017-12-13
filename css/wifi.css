@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html { 
+	height: 100% ;
+}
+	body { 
+		height: 100%; 
+		margin: 0; 
+		padding: 0 ;
+	}
+/* ---------- */
+body { 
+	font-family: "微軟正黑體","Microsoft JhengHei","HeiTi TC",sans-serif;
+	background-image: url('');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.font {
+	font-family: "微軟正黑體","Microsoft JhengHei","HeiTi TC",sans-serif;
+}
+.wrap {
+/*max-width: 1600px;
+width: 90%;*/
+height: 95vh;
+margin: 0 auto;
+background-color: rgba(16,129,236,0.9);
+padding-top: 20px;
+text-align: center;
+}
+.header{
+margin: 0px auto;
+width: 300px;			
+}
+
+	.header h1{
+	font-size: 48px;
+	text-align: center;
+	color: #0A0A0A;
+	background: #EDEDED;  
+	opacity: 0.6;    /*不透明度*/
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px 0 5px 0px;
+	border-radius: 10px 10px 0 0;
+	}
+		.header h1:hover{
+			cursor: pointer;
+			background: #0A0A0A;
+			color: #EDEDED;
+		}		
+
+.header p{
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	color: #EDEDED;
+	background-color: #0A0A0A;  
+	opacity: 0.6;
+	line-height: 24px;
+	margin: 0 auto;			  	
+	padding: 5px 6px 5px 6px;
+	border-radius: 0 0 10px 10px;
+}
+.select {			
+	width: 300px;
+	margin: 10px auto 5px auto;
+	display: inline-block;
+
+}
+	
+	.selectList {
+		width: 180px;
+		font-size: 12pt;
+		border: 2px solid orange;
+		border-radius: 3px;
+		padding: 3px;				
+	}
+	.select .search {
+		width: 150px;
+		font-size: 12pt;
+		background-color: orange;
+		border: 2px outset orange;				
+		color: #FFF;				
+		padding: 5px 30px;
+		border-radius: 3px;
+		display: inline;	
+	}
+		.select .search:hover {
+			background-color: #FFF;
+			border: 2px inset orange;
+			color: orange;
+			border-radius: 3px;										
+		}
+
+.list {
+	width: 80%;
+	height: 19vh;
+	margin: 5px auto;
+	/*background-color: #FFF;*/
+	overflow: auto;
+	/*float: left; */
+}
+.map {
+    height: 47vh;
+    width: 95%;
+    margin: 0 auto;
+    background-color: gray;
+    /*float: right;        
+    position: fixed;
+    right: 0;*/
+}
+.infoContent {
+	width:220px;
+	min-height:50px;
+	padding: 10% auto;
+}
+.item {
+	width: 25%;
+	min-height: 60px;
+	display: inline-block;
+	background-image: radial-gradient(circle at 0 100%,#0CF 3%,#FFF 5%,#FFF 6%,#0CF 8%,#FFF 10%,#FFF 11%,#0CF 12%,#FFF 15%,#FFF 16%,#0CF 18%,#FFF 20% );
+	background-color: rgba(255,255,255,0.8);
+	margin: 10px;
+	padding: 20px 10px;
+	border-radius: 10px;
+	text-align: left;
+	font-size: 12pt;
+	vertical-align: top;
+	/*border-left: 5px dashed rgb(22,49,101);*/
+}
+.geolocMarker {
+  	width:80px;
+  	min-height:20px;
+  	margin-top:5px;
+  	text-align:center;
+  	color:red;
+}
+footer {
+	text-align:center;
+    position:fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    line-height: 1.2;
+}
+	footer a {
+		color: #fff;
+		text-decoration: none;
+	}
+	footer a:hover {
+		color: #ffa;
+		top: 2px;
+		left: 2px;
+		position: relative;
+		text-decoration: none;
+	}
+@media only screen and (max-width: 768px) {
+	.wrap{
+        width:100%;
+        margin:0px;
+    }
+    .list {
+		width: 75%;				
+	}
+	.map {		        
+        width: 95%;		        		        
+    }
+    .item {
+		width: 40%;				
+	}
+    
+}
