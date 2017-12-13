@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$('#search').bind('click',function(){
 		$.ajax({ 
 		    type:'GET', 
-		 	url:'../wifi.json', 
+		 	url:'https://punili.github.io/iHsinChu_wifi/wifi.json', 
 		    success:function (data){
 		    	var thisdata = data;
 		    	$('.list').show();
