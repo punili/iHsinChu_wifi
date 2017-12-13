@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$('#search').bind('click',function(){
 		$.ajax({ 
 		    type:'GET', 
-		 	url:'http://opendata.hccg.gov.tw/dataset/beeb0065-2f96-4119-a15c-a7641c623be7/resource/acc17e6f-11a2-49bd-b923-37107aacdbd3/download/20171201135132790.json', 
+		 	url:'../wifi.json', 
 		    success:function (data){
 		    	var thisdata = data;
 		    	$('.list').show();
